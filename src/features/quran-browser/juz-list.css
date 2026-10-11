@@ -1,0 +1,76 @@
+/* Juz List Styling */
+
+.juz-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  width: 100%;
+}
+
+.juz-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-3);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.juz-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-4);
+  min-height: 72px;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--space-2);
+  text-align: start;
+  cursor: pointer;
+  transition: border-color var(--transition-fast), background-color var(--transition-fast);
+  color: var(--color-text);
+  width: 100%;
+}
+
+.juz-card:hover {
+  background-color: var(--color-surface-hover);
+  border-color: var(--color-secondary);
+}
+
+.juz-card-left {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.juz-number-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-canvas);
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--color-secondary);
+  flex-shrink: 0;
+}
+
+.juz-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.juz-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+.juz-range-summary {
+  font-size: 0.825rem;
+  color: var(--color-text-muted);
+}

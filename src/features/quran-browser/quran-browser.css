@@ -1,0 +1,85 @@
+/* Quran Browser Page Styling */
+
+.quran-browser-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.browser-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.browser-title {
+  font-size: 1.75rem;
+  color: var(--color-primary);
+}
+
+.browser-subtitle {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+.browser-controls {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.browser-search-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.browser-search-input {
+  width: 100%;
+  min-height: var(--target-min-size);
+  padding: var(--space-3) var(--space-4);
+  font-family: var(--font-ui);
+  font-size: 1rem;
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: var(--space-2);
+  transition: border-color var(--transition-fast);
+}
+
+.browser-search-input:focus {
+  border-color: var(--color-secondary);
+}
+
+.browse-tabs {
+  display: flex;
+  gap: var(--space-2);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: var(--space-2);
+  overflow-x: auto;
+}
+
+.browse-tab {
+  min-height: var(--target-min-size);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--space-2);
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  background: transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.browse-tab:hover {
+  color: var(--color-text);
+  background-color: var(--color-surface-hover);
+}
+
+.browse-tab[aria-selected='true'] {
+  color: #FFFFFF;
+  background-color: var(--color-primary);
+}

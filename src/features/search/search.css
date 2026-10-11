@@ -1,0 +1,193 @@
+/**
+ * Search Page Styles
+ * Serene Sanctuary Design System Tokens
+ */
+
+.search-container {
+  max-width: var(--reader-max-width);
+  margin: 0 auto;
+  padding: var(--space-4) var(--space-4) var(--space-16);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  min-height: 100vh;
+}
+
+.search-header {
+  text-align: center;
+  padding: var(--space-4) 0;
+}
+
+.search-title {
+  font-family: var(--font-ui);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: var(--space-2);
+}
+
+.search-subtitle {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+}
+
+/* Search Form */
+.search-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  background-color: var(--color-surface);
+  padding: var(--space-4);
+  border-radius: var(--space-3);
+  border: 1px solid var(--color-border);
+}
+
+.search-input-wrapper {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.search-input {
+  flex: 1;
+  min-height: var(--target-min-size);
+  padding: var(--space-2) var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--space-2);
+  background-color: var(--color-canvas);
+  color: var(--color-text);
+  font-family: var(--font-ui);
+  font-size: 1rem;
+}
+
+.search-input:focus {
+  outline: 2px solid var(--color-secondary);
+  border-color: var(--color-secondary);
+}
+
+/* Scope Filters */
+.search-scope-filters {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.search-scope-btn {
+  min-height: 36px;
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--space-2);
+  border: 1px solid var(--color-border);
+  background-color: var(--color-surface);
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.search-scope-btn--active {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  border-color: var(--color-primary);
+}
+
+/* Results Count */
+.search-results-summary {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+/* Results List */
+.search-results-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.search-result-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--space-3);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  cursor: pointer;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  border-inline-start: 3px solid var(--color-secondary);
+}
+
+.search-result-card:hover,
+.search-result-card:focus-within {
+  border-color: var(--color-primary);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.search-result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+.search-result-surah {
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.search-result-badge {
+  font-size: 0.75rem;
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--space-1);
+  background-color: var(--color-canvas);
+  color: var(--color-text-muted);
+  border: 1px solid var(--color-border);
+}
+
+.search-result-arabic {
+  font-family: var(--font-arabic);
+  font-size: 1.4rem;
+  line-height: 2;
+  text-align: right;
+  direction: rtl;
+  color: var(--color-text);
+}
+
+.search-result-english {
+  font-family: var(--font-ui);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+  direction: ltr;
+}
+
+/* Highlights */
+mark.search-highlight {
+  background-color: var(--color-secondary-highlight);
+  color: #1a2420;
+  padding: 0 2px;
+  border-radius: 2px;
+  font-weight: 600;
+}
+
+/* Empty and Initial States */
+.search-empty-state,
+.search-prompt-state {
+  text-align: center;
+  padding: var(--space-12) var(--space-4);
+  background-color: var(--color-surface);
+  border-radius: var(--space-3);
+  border: 1px dashed var(--color-border);
+  color: var(--color-text-muted);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.search-empty-icon {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-2);
+}

@@ -1,0 +1,96 @@
+/**
+ * Quran Reading Sanctuary Design Tokens
+ * Conforming to Constitution Principles I & II
+ */
+
+:root {
+  /* 4px Base Spacing Grid */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  /* Typography Families */
+  --font-arabic: 'Noto Serif', 'Amiri', 'Traditional Arabic', serif;
+  --font-ui: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+
+  /* Canonical Colors */
+  --color-primary: #0D5C46; /* Sacred Emerald Teal */
+  --color-primary-hover: #083D2F;
+  --color-secondary: #C5A059; /* Warm Antique Champagne Gold */
+  --color-secondary-hover: #AF8B45;
+  --color-secondary-highlight: #E6C875;
+  --color-tertiary: #1E3B32; /* Deep Forest Cypress */
+  --color-neutral: #1A2420; /* Deep Charcoal Olive */
+  --color-muted: #3F4944;
+
+  /* Focus and Target Sizes */
+  --target-min-size: 44px;
+  --focus-ring: 3px solid #C5A059;
+  --focus-offset: 2px;
+
+  /* Reading Column Constraint */
+  --reader-max-width: 720px;
+  --reader-line-height: 2.3;
+  --ayah-padding-bottom: 32px;
+
+  /* Transitions */
+  --transition-fast: 150ms ease-in-out;
+  --transition-normal: 250ms ease-in-out;
+}
+
+/* Light Theme Variables */
+:root[data-theme='light'],
+:root {
+  --color-canvas: #F9FAF8;
+  --color-surface: #FFFFFF;
+  --color-surface-hover: #F0F4F1;
+  --color-border: #E5EAE3;
+  --color-border-hover: #C5D0C2;
+  --color-text: #1A2420;
+  --color-text-muted: #4A5651;
+  --color-active-ayah-bg: rgba(13, 92, 70, 0.06);
+  --color-active-ayah-border: #C5A059;
+  --shadow-sm: 0 1px 2px rgba(10, 26, 21, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(10, 26, 21, 0.08), 0 2px 4px -1px rgba(10, 26, 21, 0.04);
+}
+
+/* Dark Theme Variables */
+:root[data-theme='dark'] {
+  --color-canvas: #0A1A15;
+  --color-surface: #12231E;
+  --color-surface-hover: #18312A;
+  --color-border: #1C332B;
+  --color-border-hover: #294A3F;
+  --color-text: #E5EAE3;
+  --color-text-muted: #9BB0A5;
+  --color-active-ayah-bg: rgba(13, 92, 70, 0.28);
+  --color-active-ayah-border: #E6C875;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+}
+
+/* Reader Font Scaling */
+:root[data-font-scale='sm'] {
+  --quran-font-size: 1.5rem;
+  --translation-font-size: 0.95rem;
+}
+:root[data-font-scale='md'],
+:root {
+  --quran-font-size: 1.875rem;
+  --translation-font-size: 1.0625rem;
+}
+:root[data-font-scale='lg'] {
+  --quran-font-size: 2.25rem;
+  --translation-font-size: 1.1875rem;
+}
+:root[data-font-scale='xl'] {
+  --quran-font-size: 2.75rem;
+  --translation-font-size: 1.375rem;
+}

@@ -1,0 +1,98 @@
+/**
+ * Quran Reader Styles
+ * Conforming strictly to Constitution Principle II & Design System Constraints
+ */
+
+.reader-container {
+  max-width: var(--reader-max-width);
+  margin: 0 auto;
+  padding: var(--space-4) var(--space-4) var(--space-16);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  min-height: 100vh;
+}
+
+/* Surah Reader Header */
+.reader-header {
+  text-align: center;
+  padding: var(--space-6) var(--space-4);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--space-3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.reader-surah-title {
+  font-family: var(--font-arabic);
+  font-size: 2.5rem;
+  color: var(--color-primary);
+  line-height: 1.3;
+}
+
+.reader-surah-subtitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.reader-surah-meta {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+/* Bismillah Banner */
+.bismillah-banner {
+  text-align: center;
+  padding: var(--space-4);
+  font-family: var(--font-arabic);
+  font-size: 1.75rem;
+  color: var(--color-secondary);
+  line-height: 1.8;
+}
+
+/* Reader Toolbar */
+.reader-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.reader-nav-controls {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.reader-verse-select {
+  min-height: var(--target-min-size);
+  padding: var(--space-2) var(--space-3);
+  background-color: var(--color-canvas);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: var(--space-2);
+  font-family: var(--font-ui);
+  font-size: 0.95rem;
+}
+
+/* Verses List */
+.reader-verses-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

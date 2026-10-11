@@ -1,0 +1,27 @@
+/**
+ * Theme Definitions and Token Overrides
+ */
+
+[data-theme='light'] {
+  --color-canvas: #F9FAF8;
+  --color-surface: #FFFFFF;
+  --color-surface-hover: #F0F4F1;
+  --color-border: #E5EAE3;
+  --color-border-hover: #C5D0C2;
+  --color-text: #1A2420;
+  --color-text-muted: #4A5651;
+  --color-card-active: rgba(13, 92, 70, 0.05);
+  --color-card-active-border: #C5A059;
+}
+
+[data-theme='dark'] {
+  --color-canvas: #0A1A15;
+  --color-surface: #12231E;
+  --color-surface-hover: #18312A;
+  --color-border: #1C332B;
+  --color-border-hover: #294A3F;
+  --color-text: #E5EAE3;
+  --color-text-muted: #9BB0A5;
+  --color-card-active: rgba(13, 92, 70, 0.25);
+  --color-card-active-border: #E6C875;
+}

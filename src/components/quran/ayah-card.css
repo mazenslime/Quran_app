@@ -1,0 +1,149 @@
+/* Ayah Card & Medallion Styles conforming to Constitution Principles */
+
+.ayah-card {
+  position: relative;
+  padding: var(--space-6) var(--space-4) var(--ayah-padding-bottom);
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  transition: background-color var(--transition-fast), border-color var(--transition-fast);
+  background-color: transparent;
+  border-inline-start: 2px solid transparent;
+}
+
+/* Active Recitation / Active Reading State */
+.ayah-card--active {
+  background-color: var(--color-active-ayah-bg);
+  border-inline-start: 2px solid var(--color-secondary);
+}
+
+.ayah-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.ayah-reference {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
+/* Arabic Quran Text */
+.ayah-arabic-text {
+  font-family: var(--font-arabic);
+  font-size: var(--quran-font-size);
+  line-height: var(--reader-line-height);
+  font-feature-settings: 'kern' 1, 'calt' 1, 'liga' 1;
+  color: var(--color-text);
+  text-align: right;
+  direction: rtl;
+  user-select: text;
+  word-spacing: 2px;
+}
+
+/* English Translation */
+.ayah-english-translation {
+  font-family: var(--font-ui);
+  font-size: var(--translation-font-size);
+  line-height: 1.65;
+  color: var(--color-text-muted);
+  text-align: left;
+  direction: ltr;
+}
+
+/* Ayah Action Buttons */
+.ayah-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+}
+
+.ayah-action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: var(--target-min-size);
+  min-height: var(--target-min-size);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--space-1);
+  color: var(--color-text-muted);
+  background: transparent;
+  cursor: pointer;
+  border: 1px solid transparent;
+  font-size: 0.875rem;
+  gap: var(--space-1);
+  transition: color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.ayah-action-btn:hover {
+  color: var(--color-primary);
+  background-color: var(--color-surface-hover);
+  border-color: var(--color-border);
+}
+
+.ayah-action-btn--active {
+  color: var(--color-secondary);
+}
+
+/* Khatim Sulayman Medallion */
+.ayah-medallion {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  user-select: none;
+}
+
+.medallion-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.medallion-square-1 {
+  stroke: var(--color-secondary);
+  stroke-width: 1.5;
+  fill: var(--color-surface);
+  rx: 3px;
+  transition: stroke var(--transition-fast), fill var(--transition-fast);
+}
+
+.medallion-square-2 {
+  stroke: var(--color-secondary);
+  stroke-width: 1.5;
+  fill: none;
+  transform: rotate(45deg);
+  transform-origin: 22px 22px;
+  rx: 3px;
+  transition: stroke var(--transition-fast);
+}
+
+.medallion-numeral {
+  font-family: var(--font-arabic);
+  font-size: 1.1rem;
+  font-weight: 700;
+  fill: var(--color-text);
+  dominant-baseline: central;
+  text-anchor: middle;
+}
+
+/* Active Medallion State: Emerald Glow and Gold Highlight */
+.ayah-medallion--active .medallion-square-1 {
+  stroke: var(--color-secondary-highlight);
+  fill: var(--color-primary);
+  filter: drop-shadow(0 0 6px rgba(13, 92, 70, 0.7));
+}
+
+.ayah-medallion--active .medallion-square-2 {
+  stroke: var(--color-secondary-highlight);
+}
+
+.ayah-medallion--active .medallion-numeral {
+  fill: #FFFFFF;
+}
