@@ -4,10 +4,6 @@ import {
   faBookmark,
   faBookOpen,
   faStar,
-  faMagnifyingGlass,
-  faHeadphones,
-  faBook,
-  faBullseye,
 } from '@fortawesome/free-solid-svg-icons'
 import type { NavigationTarget } from '../../app/routes'
 import { useAppState } from '../../app/app-state'
