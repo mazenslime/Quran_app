@@ -6,6 +6,10 @@ import { isValidVerseKey } from '../../content/selectors'
 import { useAppState } from '../../app/app-state'
 import { VerseActions } from '../../components/quran/VerseActions'
 import './search.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faMagnifyingGlass 
+} from '@fortawesome/free-solid-svg-icons'
 
 export interface SearchPageProps {
   initialQuery?: string
@@ -191,7 +195,9 @@ export const SearchPage: React.FC<SearchPageProps> = ({ initialQuery = '', onNav
         {/* Empty Query Prompt */}
         {!query.trim() && (
           <div className="search-prompt-state" role="status">
-            <span className="search-empty-icon" aria-hidden="true">🔍</span>
+            <span className="search-empty-icon" aria-hidden="true">
+              <FontAwesomeIcon icon={faMagnifyingGlass} size="2x" />
+            </span>
             <h2>{isArabicUI ? 'ابدأ البحث' : 'Begin Your Search'}</h2>
             <p>
               {isArabicUI
